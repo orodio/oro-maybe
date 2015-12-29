@@ -1,0 +1,21 @@
+{
+  "name": "order66",
+  "version": "0.0.1",
+  "description": "starting point for es6 node moudles",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/index.js -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/orodio/order66"
+  },
+  "keywords": [
+    "order66"
+  ],
+  "author": "orodio",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.3.17"
+  }
+}
