@@ -1,6 +1,6 @@
 {
   "name": "oro-maybe",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "sort of like the Maybe monad but more helpful",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
@@ -36,5 +36,7 @@
     "babel-preset-stage-3": "^6.3.13",
     "rimraf": "^2.5.0",
     "webpack": "^1.12.9"
-  }
+  },
+
+  "tonicExample": "example.js"
 }
