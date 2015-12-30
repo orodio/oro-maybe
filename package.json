@@ -26,6 +26,9 @@
   ],
   "author": "orodio",
   "license": "MIT",
+  "peerDependencies":{
+    "babel-polyfill": "^6.3.14",
+  },
   "devDependencies": {
     "babel-cli": "^6.3.17",
     "babel-loader": "^6.2.0",
@@ -38,5 +41,5 @@
     "webpack": "^1.12.9"
   },
 
-  "tonicExampleFilename": "./example.js"
+  "tonicExampleFileName": "./example.js"
 }
