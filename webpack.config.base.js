@@ -8,7 +8,7 @@ module.exports = {
   },
 
   output: {
-    library: 'order66',
+    library: 'Maybe',
     libraryTarget: 'umd'
   },
 

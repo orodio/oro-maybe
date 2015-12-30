@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/orodio/.nvm/versions/node/v5.3.0/bin/node',
+1 verbose cli   '/Users/orodio/.nvm/versions/node/v5.3.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/orodio/work/mods/oro-maybe',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/orodio/.npm/oro-maybe/0.0.1/package.tgz not in flight; packing
+9 info lifecycle oro-maybe@0.0.1~prepublish: oro-maybe@0.0.1
+10 verbose lifecycle oro-maybe@0.0.1~prepublish: unsafe-perm in lifecycle true
+11 verbose lifecycle oro-maybe@0.0.1~prepublish: PATH: /Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/orodio/work/mods/oro-maybe/node_modules/.bin:/Users/orodio/.nvm/versions/node/v5.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+12 verbose lifecycle oro-maybe@0.0.1~prepublish: CWD: /Users/orodio/work/mods/oro-maybe
+13 silly lifecycle oro-maybe@0.0.1~prepublish: Args: [ '-c', 'npm run clean && npm run build' ]
+14 silly lifecycle oro-maybe@0.0.1~prepublish: Returned: code: 0  signal: null
+15 verbose tar pack [ '/Users/orodio/.npm/oro-maybe/0.0.1/package.tgz',
+15 verbose tar pack   '/Users/orodio/work/mods/oro-maybe' ]
+16 verbose tarball /Users/orodio/.npm/oro-maybe/0.0.1/package.tgz
+17 verbose folder /Users/orodio/work/mods/oro-maybe
+18 verbose addLocalTarball adding from inside cache /Users/orodio/.npm/oro-maybe/0.0.1/package.tgz
+19 silly cache afterAdd oro-maybe@0.0.1
+20 verbose afterAdd /Users/orodio/.npm/oro-maybe/0.0.1/package/package.json not in flight; writing
+21 verbose afterAdd /Users/orodio/.npm/oro-maybe/0.0.1/package/package.json written
+22 silly publish { name: 'oro-maybe',
+22 silly publish   version: '0.0.1',
+22 silly publish   description: 'sort of like the Maybe monad but more helpful',
+22 silly publish   main: 'lib/index.js',
+22 silly publish   'jsnext:main': 'src/index.js',
+22 silly publish   files: [ 'dist', 'lib', 'src' ],
+22 silly publish   scripts:
+22 silly publish    { clean: 'rimraf lib dist coverage',
+22 silly publish      'build:lib': 'babel src -d lib',
+22 silly publish      'build:umd': 'webpack src/index.js dist/order66.js --config webpack.config.dev.js',
+22 silly publish      'build:umd:min': 'webpack src src/index.js dist/order66.min.js --config webpack.config.prod.js',
+22 silly publish      build: 'npm run build:lib && npm run build:umd && npm run build:umd:min',
+22 silly publish      prepublish: 'npm run clean && npm run build' },
+22 silly publish   repository: { type: 'git', url: 'github.com/orodio/order66' },
+22 silly publish   keywords: [ 'order66' ],
+22 silly publish   author: { name: 'orodio' },
+22 silly publish   license: 'MIT',
+22 silly publish   devDependencies:
+22 silly publish    { 'babel-cli': '^6.3.17',
+22 silly publish      'babel-loader': '^6.2.0',
+22 silly publish      'babel-preset-es2015': '^6.3.13',
+22 silly publish      'babel-preset-stage-1': '^6.3.13',
+22 silly publish      'babel-preset-stage-2': '^6.3.13',
+22 silly publish      'babel-preset-stage-3': '^6.3.13',
+22 silly publish      rimraf: '^2.5.0',
+22 silly publish      webpack: '^1.12.9' },
+22 silly publish   gitHead: '717378da3f356241d53bb269c1e5b69a848ed61d',
+22 silly publish   readme: 'ERROR: No README data found!',
+22 silly publish   _id: 'oro-maybe@0.0.1',
+22 silly publish   _shasum: '89f162f63f1a5576e0fe498dc91b1bddca00df16',
+22 silly publish   _from: '.' }
+23 verbose getPublishConfig undefined
+24 silly mapToRegistry name oro-maybe
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/oro-maybe
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/orodio/.npm/oro-maybe/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/oro-maybe
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:08:24 PM
+33 verbose request using bearer token for auth
+34 verbose request id e958acb971615876
+35 http request PUT https://registry.npmjs.org/oro-maybe
+36 http 403 https://registry.npmjs.org/oro-maybe
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 30 Dec 2015 03:08:24 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-mel6520-MEL',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1451444904.547218,VS0,VE271' }
+38 verbose request invalidating /Users/orodio/.npm/registry.npmjs.org/oro-maybe on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : oro-maybe
+40 verbose stack     at makeError (/Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/orodio/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+41 verbose statusCode 403
+42 verbose pkgid oro-maybe
+43 verbose cwd /Users/orodio/work/mods/oro-maybe
+44 error Darwin 15.2.0
+45 error argv "/Users/orodio/.nvm/versions/node/v5.3.0/bin/node" "/Users/orodio/.nvm/versions/node/v5.3.0/bin/npm" "publish"
+46 error node v5.3.0
+47 error npm  v3.3.12
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.1." : oro-maybe
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
