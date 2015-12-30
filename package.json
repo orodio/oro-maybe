@@ -24,11 +24,14 @@
   "keywords": [
     "order66"
   ],
+
   "author": "orodio",
   "license": "MIT",
+
   "peerDependencies":{
-    "babel-polyfill": "^6.3.14",
+    "babel-polyfill": "^6.3.14"
   },
+
   "devDependencies": {
     "babel-cli": "^6.3.17",
     "babel-loader": "^6.2.0",
