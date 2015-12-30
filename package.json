@@ -1,6 +1,6 @@
 {
   "name": "oro-maybe",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "sort of like the Maybe monad but more helpful",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
@@ -38,5 +38,5 @@
     "webpack": "^1.12.9"
   },
 
-  "tonicExample": "example.js"
+  "tonicExampleFilename": "example.js"
 }
