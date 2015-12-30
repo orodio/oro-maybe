@@ -1,6 +1,6 @@
 {
   "name": "oro-maybe",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "sort of like the Maybe monad but more helpful",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
